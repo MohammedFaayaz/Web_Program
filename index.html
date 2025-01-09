@@ -1,68 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Header tag example </title>
-  </head>
-  <body>
-    <h1>This is the main heading of the page</h1>
-    <h3>This is the h3 level heading.</h3>
-
-
-    <header>
-      <h1>This is the heading.</h1>
-      <h4>This is the sub-heading.</h4>
-      <p>This is metadata.</p>
-    </header>
-  </body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Header tag representing navigational items</title>
-  </head>
-  
-  <body>
-    <h1>This is the main heading of the page</h1>
-    <h3>This is the h3 level heading.</h3>
-
-
-    <header>
-      <a href="https://www.scaler.com/topics/comments-in-html/">
-      HTML Comments</a> |
-
-
-      <a href="https://www.scaler.com/topics/css-specificity/">
-      CSS Specificity</a> |
-
-
-      <a href="https://www.scaler.com/topics/and-or-operators-in-sql/">
-      AND OR operators</a> |
-
-
-      <a href="https://www.scaler.com/topics/Set-theory/">
-      Set Theory</a> |
-
-
-      <a href="https://www.scaler.com/topics/set-operators-in-sql">
-      Set Operators</a>
-    </header>
-  </body>
-</html>
-<!DOCTYPE HTML>
-<html>
 <head>
-<meta charset="utf-8">
-<title> Adding Images</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Features Demo</title>
 </head>
 <body>
-<h1>How to add images to a webpage</h1>
-<p>The earth is round and looks beautiful from the space as the following image shows <br>
-<img src="images/earth.jpg" alt="The Earth is Round" title="Earth from Space"/>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to the HTML Features Demo</h1>
+        <p>Exploring the vast potential of HTML!</p>
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#images">Images</a> |
+            <a href="#videos">Videos</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About HTML</h2>
+        <p>HTML, or HyperText Markup Language, is the backbone of web development.</p>
+        <blockquote>
+            "Without HTML, there would be no web as we know it today."
+        </blockquote>
+        <p>Some key elements of HTML include:</p>
+        <ol>
+            <li>Headers</li>
+            <li>Images</li>
+            <li>Forms</li>
+            <li>Videos</li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <!-- Images Section -->
+    <section id="images">
+        <h2>Image Gallery</h2>
+        <p>Here are some sample images:</p>
+        <figure>
+            <img src="https://via.placeholder.com/200" alt="Sample Image 1" width="200">
+            <figcaption>Image 1: Placeholder Image</figcaption>
+        </figure>
+        <figure>
+            <img src="https://via.placeholder.com/300" alt="Sample Image 2" width="200">
+            <figcaption>Image 2: Placeholder Image</figcaption>
+        </figure>
+        <figure>
+            <img src="https://via.placeholder.com/400" alt="Sample Image 3" width="200">
+            <figcaption>Image 3: Placeholder Image</figcaption>
+        </figure>
+
+        <h3>Image Navigation</h3>
+        <p>Click on the image to view the full size:</p>
+        <a href="https://via.placeholder.com/200" target="_blank">View Image 1</a><br>
+        <a href="https://via.placeholder.com/300" target="_blank">View Image 2</a><br>
+        <a href="https://via.placeholder.com/400" target="_blank">View Image 3</a><br>
+    </section>
+
+    <hr>
+
+    <!-- Video Section -->
+    <section id="videos">
+        <h2>Interesting Videos</h2>
+        <p>Check out these amazing videos:</p>
+        <video controls width="300">
+            <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Watch more videos:</p>
+        <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+    </section>
+
+    <hr>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 HTML Features Demo. All rights reserved.</p>
+        <address>
+            Email us at: <a href="mailto:info@example.com">info@example.com</a><br>
+            Visit us at: <a href="https://www.example.com" target="_blank">www.example.com</a>
+        </address>
+    </footer>
 </body>
 </html>
